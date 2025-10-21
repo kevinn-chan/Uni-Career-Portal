@@ -1,8 +1,8 @@
 package Internship_project;
 
-import java.util.List;
-
 import Internship_project.enums.RepStatus;
+
+import java.util.List;
 
 import java.util.ArrayList;
 
@@ -17,9 +17,15 @@ public class UserApp {
 		this.allUsers = allUsers;
 		this.curUser = null;}
 	
-	public User getCurUser() {
-		return this.curUser;}
+	public User getCurUser() {		
+		return this.curUser;}		// returns user logged in
 	
+	public User getUserInfo(String userID) {
+		for(User user : allUsers) {
+			if(user.getUserID().equals(userID)) {
+				return user;}}
+		return null;}				//return all user info using userID
+		
 	public boolean login(String userID, String password) {		//get input userID and password
 		for(User user : allUsers) {								//for each user in masterlist
 			if(user.getUserID().equals(userID) && user.checkPassword(password)) {		//correct userID and password
@@ -40,8 +46,7 @@ public class UserApp {
 				System.out.println("Login Failed! Incorrect UserID or Password.");
 				return false;}
 			}
-				
-		}
+		return false;}		//default false (not logged in)
 	
 	public void logout() {
 		if(this.curUser != null) {
@@ -50,8 +55,17 @@ public class UserApp {
 		else {
 			System.out.println("Logout Unsuccessful.");}}
 	
-	public boolean isLoggedIn() {
+	public boolean checkifLoggedIn() {
 		return this.curUser != null;}
+	
+	public boolean createCompanyRepAccount(String userID, String name, String password, String companyName, String department, String position){			//for new accounts not already under ComppanyRep
+		if(getUserInfo(userID) != null) {		// userID already exists in masterlist, means not a new account
+			System.out.println("Account with the same User ID already exist. Account creation failed.");
+			return false;}
+		CompanyRep rep = new CompanyRep(userID, name, password, companyName, department, position);
+		allUsers.add(rep);
+		System.out.println("Account successfully created. Awaiting approval.");
+		return true;}
 		
 	public void approveCompanyRep(CompanyRep rep, CareerCenterStaff staff) {
 		if (!(rep.getStatus() == RepStatus.APPROVED)){
@@ -66,6 +80,26 @@ public class UserApp {
 			System.out.println("Company representative account for " + rep.getName() + " rejected by Career Center Staff: " + staff.getName());}
 		else {
 			System.out.println("Company representative account for " + rep.getName() + " is not pending approval");}}
+	
+	public List <CompanyRep> viewRepsPending(){
+		List <CompanyRep> pendingList = new ArrayList <>();
+		for(User user : allUsers) {
+			if(user instanceof CompanyRep) {
+				CompanyRep rep =  (CompanyRep) user;
+				if (rep.getStatus() == RepStatus.PENDING) {
+					pendingList.add(rep);}}}						//keeps track of companyrep accounts under pending state)
+	
+		return pendingList;}
+	
+	public List <CareerCenterStaff> viewStaffList() {				//necessary? i dont see it in the requirments
+		List <CareerCenterStaff> staffList = new ArrayList <>();
+		for(User user : allUsers) {
+			if(user instanceof CareerCenterStaff) {
+				CareerCenterStaff staff = (CareerCenterStaff) user;
+				staffList.add(staff);}}
+		return staffList;}											// see all staff?
+	
+	}
 
 	
 		
@@ -73,7 +107,7 @@ public class UserApp {
 			
 			
 			
-		}
+		
 
 		
 	
