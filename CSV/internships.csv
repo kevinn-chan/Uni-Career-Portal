@@ -1,0 +1,31 @@
+InternshipID,Title,Description,Level,Major,ClosingDate,OpeningDate,Status,CompanyName,CompanyRepId,NumberOfSlots,ConfirmedSlots,Visible
+1,CS Foundations Intern,Assist in building internal tools for students,BASIC,Computer Science,2025-12-31,2025-08-01,APPROVED,MHA,meg001,4,0,true
+2,Web Dev Intern,Help develop student portals and dashboards,BASIC,Computer Science,2025-12-15,2025-08-15,APPROVED,MHA,meg001,3,1,true
+3,Data Analytics Intern,Support analytics for student services,INTERMEDIATE,Data Science & AI,2025-12-20,2025-09-01,APPROVED,MHA,meg001,3,0,true
+4,Machine Learning Intern,Prototype small ML models for campus apps,INTERMEDIATE,Data Science & AI,2026-01-10,2025-09-15,APPROVED,MHA,meg001,2,0,true
+5,CS Project Intern,Work on capstone-style internal systems,BASIC,Computer Science,2025-11-22,2025-10-01,APPROVED,MHA,meg001,2,1,true
+6,Backend Services Intern,Build and maintain simple REST APIs,INTERMEDIATE,Computer Science,2025-12-05,2025-09-20,APPROVED,MHA,meg001,3,0,true
+7,Campus App UI Intern,Design and implement UI flows for student app,BASIC,Information Engineering & Media,2025-12-18,2025-09-10,APPROVED,NTU,jeff001,2,0,true
+8,Systems Engineering Intern,Assist with internal system integration,ADVANCED,Computer Engineering,2026-01-15,2025-08-20,APPROVED,MHA,meg001,2,1,true
+9,Student Portal QA Intern,Test new features for student systems,BASIC,Computer Science,2025-12-10,2025-09-05,APPROVED,MHA,meg001,4,0,true
+10,AI Chatbot Intern,Enhance FAQ chatbot for students,INTERMEDIATE,Data Science & AI,2025-12-28,2025-09-25,APPROVED,MHA,meg001,2,0,true
+11,Fullstack Intern,Develop new modules for CAO portal,BASIC,Computer Science,2025-12-30,2025-10-01,APPROVED,NTU,jeff001,3,1,true
+12,Data Products Intern,Support data pipelines for CAO dashboards,INTERMEDIATE,Data Science & AI,2025-11-23,2025-10-10,APPROVED,NTU,jeff001,2,1,true
+13,Advanced SWE Intern,Work on performance-critical backend services,ADVANCED,Computer Science,2026-01-05,2025-08-10,APPROVED,NTU,jeff001,2,0,true
+14,Research Intern (CS),Support research projects in CS education,BASIC,Computer Science,2026-01-01,2025-09-15,APPROVED,NTU,jeff001,1,0,true
+15,Backend Intern,Maintain internal microservices,INTERMEDIATE,Computer Science,2025-12-22,2025-10-05,PENDING,NTU,jeff001,1,0,false
+16,Data Visualisation Intern,Build dashboards for student statistics,INTERMEDIATE,Data Science & AI,2025-12-12,2025-09-20,APPROVED,NTU,jeff001,3,2,true
+17,Mobile App Intern,Prototype mobile features for student app,BASIC,Information Engineering & Media,2025-12-08,2025-09-18,APPROVED,NTU,jeff001,2,0,true
+18,Security Tools Intern,Assist with simple security tooling,ADVANCED,Computer Engineering,2026-01-20,2025-08-25,APPROVED,NTU,jeff001,2,0,true
+19,Train Systems Intern,Monitor train telemetry dashboards,BASIC,Computer Engineering,2025-12-18,2025-09-01,APPROVED,LTA,tim001,3,1,true
+20,Transport Analytics Intern,Analyse commuter traffic patterns,INTERMEDIATE,Data Science & AI,2025-12-25,2025-09-10,APPROVED,LTA,tim001,2,1,true
+21,Signalling Software Intern,Support signalling simulation tools,ADVANCED,Computer Engineering,2025-11-21,2025-09-20,APPROVED,LTA,tim001,2,1,true
+22,Passenger Info UI Intern,Improve UI for info displays,BASIC,Information Engineering & Media,2025-12-02,2025-09-15,APPROVED,LTA,tim001,2,0,true
+23,Operations Dashboard Intern,Build dashboards for operations centre,INTERMEDIATE,Computer Science,2025-12-07,2025-09-22,APPROVED,LTA,tim001,3,3,false
+24,Simulation Tools Intern,Help maintain train simulation software,ADVANCED,Computer Engineering,2026-01-12,2025-08-30,APPROVED,LTA,tim001,2,0,true
+25,Intro CS Helper,Assist in CS lab coaching,BASIC,Computer Science,2025-11-29,2025-10-15,APPROVED,MHA,meg001,4,3,true
+26,AI For Education Intern,Prototype recommender features for modules,INTERMEDIATE,Data Science & AI,2026-01-08,2025-10-01,APPROVED,MHA,meg001,2,0,true
+27,Innovation Lab Intern,Work on experimental campus projects,BASIC,Information Engineering & Media,2025-12-27,2025-10-05,APPROVED,NTU,jeff001,3,0,true
+28,Cloud Infrastructure Intern,Assist with cloud deployments,ADVANCED,Computer Science,2026-01-18,2025-09-28,APPROVED,NTU,jeff001,2,1,true
+29,Data Ops Intern,Monitor and maintain data jobs,INTERMEDIATE,Data Science & AI,2025-12-04,2025-10-02,APPROVED,LTA,tim001,2,1,true
+30,Media Content Tools Intern,Build internal tools for media team,BASIC,Information Engineering & Media,2025-12-20,2025-10-10,PENDING,MHA,meg001,2,0,false
