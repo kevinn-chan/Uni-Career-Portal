@@ -13,11 +13,3 @@ A Command Line Interface (CLI) application designed to simulate a university car
 * **Architecture:** Object-Oriented Programming (OOP)
 * **Storage:** Local CSV File I/O
 * **Interface:** Command Line Interface (CLI)
-
-## 📂 Project Structure
-
-```text
-├── src/              # Source code directory (.java files)
-├── data/             # CSV files for data persistence
-├── docs/             # UML diagrams and project documentation
-└── README.md         # Project documentation
