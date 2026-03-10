@@ -1,0 +1,6 @@
+package enums;
+
+public enum InternshipLevel {	//levels of internships
+	BASIC,
+	INTERMEDIATE,
+	ADVANCED}
