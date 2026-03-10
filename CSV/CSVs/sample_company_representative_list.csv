@@ -1,0 +1,5 @@
+CompanyRepID,Name,CompanyName,Department,Position,Email,Status
+jeff002,Jeffery,Micron,IT,Director,megan@micron.com,PENDING
+meg001,Megan,MHA,IT,Manager,meg001@NTU.sg,APPROVED
+jeff001,Jeffery,NTU,CAO,Staff,jeff@NTU.sg,APPROVED
+tim001,Timothy,LTA,Trains,Manager,tim@lta.gov.sg,APPROVED
